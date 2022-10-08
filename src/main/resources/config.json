@@ -1,0 +1,17 @@
+{
+  "developerName": "Victor Manuel Soto Alonso",
+  "developerEmail": "vsalonso@gmail.com",
+  "modelPackage": "com.victor.apiinditex.price.infrastructure.generate.model",
+  "apiPackage": "com.victor.apiinditex.price.infrastructure.generate.api",
+  "dateLibrary": "java17",
+  "useBeanValidation": true,
+  "interfaceOnly": true,
+  "useOptional": true,
+  "library": "spring-boot",
+  "typeMappings": {
+    "OffsetDateTime": "LocalDateTime"
+  },
+  "importMappings": {
+    "java.time.OffsetDateTime": "java.time.LocalDateTime"
+  }
+}
