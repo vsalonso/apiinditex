@@ -31,20 +31,20 @@ paths:
         - in: query
           name: applyDate
           allowEmptyValue: false
-          description: application date (yyyy-MM-dd-HH.mm.ss)
+          description: date (yyyy-MM-dd-HH.mm.ss)
           required: true
           schema:
             type: string
       responses:
         200:
-          description: Price to apply
+          description: Search results
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PriceResponse'
 
         400:
-          description: Malformed syntax of the request params
+          description: Input parameters error
           content:
             application/problem+json:
               schema:
@@ -52,10 +52,10 @@ paths:
               example:
                 status: 400
                 title: Bad Request
-                detail: Wrong value in the application Date parameter
+                detail: Date formatting error
 
         500:
-          description: Server encountered an unexpected problem
+          description: Unexpected problem server
           content:
             application/problem+json:
               schema:
@@ -67,30 +67,30 @@ paths:
 components:
   schemas:
     PriceResponse:
-      description: Product object returned by the API
+      description: Object search find result
       type: object
       properties:
         productId:
-          description: Product identifier
+          description: Identifier product
           type: integer
         brandId:
-          description: Brand identifier
+          description: Identifier brand
           type: integer
         priceList:
-          description: Price application
+          description: List of prices
           type: integer
         startDate:
-          description: application date
+          description: start date
           type: string
           format: date-time
           example: yyyy-MM-dd-HH.mm.ss
         endDate:
-          description: application date
+          description: end date
           type: string
           format: date-time
           example: yyyy-MM-dd-HH.mm.ss
         price:
-          description: Final apply price
+          description: Final price applied
           type: number
           format: double
     PriceError:
@@ -98,7 +98,7 @@ components:
       properties:
         title:
           type: string
-          description: A short, summary of the problem type
+          description: Description of the problem type
         status:
           type: integer
           format: int32
