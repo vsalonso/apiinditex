@@ -1,8 +1,8 @@
 package com.victor.apiinditex.infrastruture.bbdd.repository;
 
-import com.victor.apiinditex.infrastruture.api.service.PriceServiceAPI;
+import com.victor.apiinditex.domain.Price;
+import com.victor.apiinditex.domain.PriceServiceAPI;
 import com.victor.apiinditex.infrastruture.bbdd.converter.PriceEntityToPriceConverter;
-import com.victor.apiinditex.model.Price;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

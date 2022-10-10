@@ -1,8 +1,9 @@
-package com.victor.apiinditex.infrastruture.api.service;
+package com.victor.apiinditex.application.service;
 
-import com.victor.apiinditex.infrastruture.api.exception.PriceNotFoundException;
-import com.victor.apiinditex.model.Price;
-import com.victor.apiinditex.model.PriceRQ;
+import com.victor.apiinditex.application.exception.PriceNotFoundException;
+import com.victor.apiinditex.application.request.PriceRQ;
+import com.victor.apiinditex.domain.Price;
+import com.victor.apiinditex.domain.PriceServiceAPI;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

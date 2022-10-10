@@ -1,4 +1,4 @@
-package com.victor.apiinditex.infrastruture.api.exception;
+package com.victor.apiinditex.application.exception;
 
 
 public class PriceNotFoundException extends RuntimeException {

@@ -11,7 +11,7 @@ import java.util.List;
 public interface PriceEntityToPriceConverter {
 
     @Mapping(target = "productId", source = "productId")
-    com.victor.apiinditex.model.Price priceEntityToPrice(PriceEntity entity);
+    com.victor.apiinditex.domain.Price priceEntityToPrice(PriceEntity entity);
 
-    List<com.victor.apiinditex.model.Price> priceEntityToPrices(List<PriceEntity> entity);
+    List<com.victor.apiinditex.domain.Price> priceEntityToPrices(List<PriceEntity> entity);
 }

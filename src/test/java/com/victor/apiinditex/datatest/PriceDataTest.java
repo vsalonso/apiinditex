@@ -1,6 +1,6 @@
 package com.victor.apiinditex.datatest;
 
-import com.victor.apiinditex.model.Price;
+import com.victor.apiinditex.domain.Price;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

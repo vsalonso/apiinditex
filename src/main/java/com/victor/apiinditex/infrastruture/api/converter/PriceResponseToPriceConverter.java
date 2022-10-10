@@ -1,7 +1,7 @@
 package com.victor.apiinditex.infrastruture.api.converter;
 
 
-import com.victor.apiinditex.model.Price;
+import com.victor.apiinditex.domain.Price;
 import com.victor.apiinditex.price.infrastructure.generate.model.PriceResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

@@ -1,6 +1,4 @@
-package com.victor.apiinditex.infrastruture.api.service;
-
-import com.victor.apiinditex.model.Price;
+package com.victor.apiinditex.domain;
 
 import java.time.LocalDateTime;
 import java.util.List;

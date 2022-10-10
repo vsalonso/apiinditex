@@ -1,10 +1,10 @@
 package com.victor.apiinditex.infrastruture.api.controller;
 
 
+import com.victor.apiinditex.application.request.PriceRQ;
+import com.victor.apiinditex.application.service.PriceService;
+import com.victor.apiinditex.domain.Price;
 import com.victor.apiinditex.infrastruture.api.converter.PriceResponseToPriceConverter;
-import com.victor.apiinditex.infrastruture.api.service.PriceService;
-import com.victor.apiinditex.model.Price;
-import com.victor.apiinditex.model.PriceRQ;
 import com.victor.apiinditex.price.infrastructure.generate.api.PricesApi;
 import com.victor.apiinditex.price.infrastructure.generate.model.PriceResponse;
 import lombok.RequiredArgsConstructor;

@@ -1,11 +1,10 @@
 package com.victor.apiinditex.application.service;
 
+import com.victor.apiinditex.application.exception.PriceException;
+import com.victor.apiinditex.application.request.PriceRQ;
 import com.victor.apiinditex.datatest.PriceDataTest;
-import com.victor.apiinditex.infrastruture.api.exception.PriceException;
-import com.victor.apiinditex.infrastruture.api.service.PriceService;
-import com.victor.apiinditex.infrastruture.api.service.PriceServiceAPI;
-import com.victor.apiinditex.model.Price;
-import com.victor.apiinditex.model.PriceRQ;
+import com.victor.apiinditex.domain.Price;
+import com.victor.apiinditex.domain.PriceServiceAPI;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

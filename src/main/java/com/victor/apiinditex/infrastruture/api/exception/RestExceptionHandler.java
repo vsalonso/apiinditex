@@ -1,6 +1,8 @@
 package com.victor.apiinditex.infrastruture.api.exception;
 
 
+import com.victor.apiinditex.application.exception.PriceException;
+import com.victor.apiinditex.application.exception.PriceNotFoundException;
 import com.victor.apiinditex.price.infrastructure.generate.model.PriceError;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

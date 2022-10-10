@@ -1,4 +1,4 @@
-package com.victor.apiinditex.model;
+package com.victor.apiinditex.domain;
 
 import lombok.Builder;
 
